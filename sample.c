@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 	printf("\n Enter the password : \n");
 	fgets(buff, bufferSize, stdin);
 
-	if(strcmp(buff, "thegeekstuff"))
+	if(strncmp(buff, "thegeekstuff", bufferSize))
 	{
 		printf ("\n Wrong Password \n");
 	}
